@@ -1,0 +1,23 @@
+﻿@model Calculator  
+<form asp-controller="Home" asp-action="Index" method="post" >  
+    <div class="form-group">  
+        <div class="row">  
+            <label class="col-lg-2">First Number</label>  
+            <input type="number" asp-for="FirstNumber" class="col-lg-2" />  
+        </div>  
+        <div class="row">  
+            <label class="col-lg-2">Second Number</label>  
+            <input type="number" asp-for="SecondNumber" class="col-lg-2" />  
+        </div>  
+        <div class="row">  
+            <label class="col-lg-2">Result</label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="Result" />  
+        </div>  
+        <div class="row">  
+            <input type="submit" value="+" asp-action="Add" />  
+            <input type="submit" value="-" asp-action="Substract" />
+            <input type="submit" value="X" asp-action="Multiply" />
+            <input type="submit" value="/" asp-action="Divide" />
+        </div>  
+    </div>  
+</form>  
